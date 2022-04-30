@@ -1,0 +1,200 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos globais*/
+
+body {
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-family: 'Arial';
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/*main movie*/
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('/img/pLOR_img1.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-movie .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 1.5s ease all;
+}
+
+.button:hover {
+    background-color: white;
+
+
+}
+
+.button i {
+    margin-right: 8px;
+
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    margin-left: 10px;
+}
+
+.main-movie .container {
+    width: 75%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movie {
+    padding: 5px;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000ab;
+    display: none;
+    justify-content: center;
+
+}
+
+.modal p {
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.modal_content {
+    display: grid;
+    place-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 500px;
+    height: 500px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    text-align: justify;
+    background-color: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50));
+
+}
+
+.modal_link {
+    font-family: 'Arial';
+    font-size: 16px;
+    padding-top: 1rem;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+
+}
+
+.modal_video {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000ab;
+    display: none;
+    justify-content: center;
+
+}
+.modal_content_video {
+    display: grid;
+    place-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 500px;
+    height: 500px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    text-align: justify;
+    background-color: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50));
+
+}
+
+.modal_link_video {
+    font-family: 'Arial';
+    font-size: 16px;
+    padding-top: 1rem;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+
+}

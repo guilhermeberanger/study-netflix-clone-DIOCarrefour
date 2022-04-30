@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <!--Owl css-->
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+
+
+    <title>TOLKIENFLIX</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">TOLKIENFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-movie">
+            <div class="container">
+                <h3 class="title">O SENHOR DOS ANÉIS</h3>
+                <p class="description">Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel
+                    mágico e maligno que precisa ser destruído antes que caia nas mãos do mal.</p>
+                <div class="buttons">
+                    <button role="button" class="button">
+                        <i class="fa-solid fa-play"></i>
+                        <a class="btn" href="javascript: open_video()">ASSISTIR AGORA</a>
+                    </button>
+                    <button role="button" class="button">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a class="btn" href="javascript: open()"> MAIS INFORMAÇÕES</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="carousel-movie">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-movie" src="./img/LOR_img2.jpg" alt="Lord of The Rings - Two Towers" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" src="./img/LOR_img3.jpg" alt="Lord of The Rings - Two Towers" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" src="./img/TH_img1.jpg" alt="Lord of The Rings - Two Towers" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" src="./img/TH_img2.jpg" alt="Lord of The Rings - Two Towers" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-movie" src="./img/TH_img3.jpg" alt="Lord of The Rings - Two Towers" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!--Modal MoreInfos-->
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <div class="modal_description">
+                <p>Quando o escritor J.R.R. Tolkien criou o universo de "O Senhor dos Anéis" estava longe de
+                    imaginar
+                    que estava a dar origem a um dos mais lucrativos e aclamados fenómenos cinematográficos do século
+                    XXI. Este
+                    filme, dirigido por Peter Jackson, este é o primeiro de uma trilogia que segue em crescendo por um
+                    mundo
+                    imaginário, a Terra Média, por entre criaturas fantásticas como elfos, anões, hobbits e orcs, para
+                    acompanhar a jornada de Frodo Baggins, um hobbit encarregado de uma missão particularmente
+                    espinhosa: ir até
+                    ao inóspito reino de Mordor e destruir na lava de um vulcão o Anel</p>
+            </div>
+            <a class="modal_link" href="javascript: close()">Close</a>
+        </div>
+    </div>
+    </div>
+
+    <!--Modal Video-->
+    <div class="modal_video" id="modal_video">
+        <div class="modal_content_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-xg-FkPtLag"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <a class="modal_link_video" href="javascript: close_video()">Close</a>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<!--Externals Scripts-->
+<script src="https://kit.fontawesome.com/64f5860cc1.js" crossorigin="anonymous"></script>
+<script src="/js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Internal Scripts-->
+<script>
+    function open() {
+        document.getElementById('modal').style.display = "block"
+    }
+    function close() {
+        document.getElementById('modal').style.display = "none"
+    }
+    function open_video() {
+        document.getElementById('modal_video').style.display = "block"
+    }
+    function close_video() {
+        document.getElementById('modal_video').style.display = "none"
+    }
+</script>
+
+</html>
